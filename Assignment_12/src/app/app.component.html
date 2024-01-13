@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="bug-report-form">
+      <app-header></app-header>
+      <app-personal-info></app-personal-info>
+      <app-bug-info></app-bug-info>
+      <app-footer></app-footer>
+    </div>
+    <script>
+      var form = document.getElementById('form')
+
+      form.addEventListener('submit',function(event)
+      {
+        event.preventDefault()
+      })
+    </script>
+</div>
