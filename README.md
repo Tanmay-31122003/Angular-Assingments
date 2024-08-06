@@ -1,8 +1,205 @@
 # Angular-Assingments
-Angular Assignment's
+
+## Introduction to JavaScript
+
+- Javascript is high level and interpreted programming language commonly used to create and control dyanamic web content.
+- javascript have many libraries framework ike react, angular, view.js therefore javascript is crucial for web development.
+
+Key Feature :
+1. Lightweight and Interpreted : execution is line-by-line so it's easy to run in browser
+2. Dynamically typing : javascript dont have datatype so it's not bound to any datatype
+3. Object Oriented : supports inheritance, object, Prototype
+4. Event-Driven : it have user interaction like click, without reload the page
+5. client side validation : reducing server load by validate user input before sending to server 
+6. Cross-Platform : it highly verstile because it can run on any browser.
+
+Data Types : 
+1. Number 
+2. String 
+3. Boolean
+4. Undefined 
+5. Null 
 
 
-5 Steps 
+# JavaScript Notes
+- Introduction to JavaScript
+
+1. JavaScript is a high-level, interpreted scripting language.
+2. Used for web development to create interactive and dynamic web pages.
+3. Runs on the client-side in the browser and can be used server-side with Node.js.
+
+- Features of JavaScript
+1. Dynamic Typing: Variables can hold multiple types.
+2. Prototype-Based: Uses prototypes instead of classes for inheritance.
+3. First-Class Functions: Functions are treated as objects.
+4. Event-Driven: Executes code in response to events.
+5. Asynchronous Programming: Uses callbacks, promises, and async/await for handling asynchronous operations.
+
+- Components of JavaScript
+1. Variables: var, let, const.
+2. Data Types: String, Number, Boolean, Object, Array, Function, Undefined, Null, Symbol.
+3. Operators: Arithmetic, comparison, logical, assignment, bitwise, ternary.
+4. Control Structures: if, else, switch, for, while, do-while.
+5. Functions: Function declarations, expressions, arrow functions.
+6. Objects: Key-value pairs, methods, this keyword.
+7. Events: Mouse events, keyboard events, form events, etc.
+8. DOM Manipulation: Methods to interact with and modify the HTML document.
+
+# TypeScript Notes
+- Introduction to TypeScript : 
+TypeScript is a superset of JavaScript developed by Microsoft.
+Adds static typing and other features to JavaScript.
+Transpiles to JavaScript to run in any browser or JavaScript engine.
+
+- Features of TypeScript
+
+1. Static Typing: Type annotations for variables, function parameters, and return types.
+2. Interfaces: Define custom types and enforce structure.
+3. Classes: ES6 classes with additional TypeScript features like access modifiers.
+4. Modules: Organized code with imports and exports.
+5. Enums: Define a set of named constants.
+6. Generics: Write functions and classes that work with different types.
+
+- Components of TypeScript
+
+1. Basic Types: number, string, boolean, array, tuple, enum, any, void, null, undefined, never.
+2. Variables: let, const, type annotations 
+```
+let num: number = 5;
+```
+3. Functions: Type annotations for parameters and return types, optional and default parameters.
+4. Classes: class, constructors, methods, properties, inheritance, access modifiers (public, private, protected).
+5. Interfaces: Define shapes of objects
+```
+    interface Person 
+	{ 
+		name: string; 
+		age: number; 
+	}
+```
+
+6. Modules: export and import for code organization.
+7. Type Assertions: let strLength: number = (someValue as string).length;.
+8. Union Types: let value: string | number;.
+9. Transpile TypeScript to JavaScript
+10. Install TypeScript: 
+	1. npm install -g typescript.
+	2. Transpile: tsc [filename].ts.
+	3. TypeScript Environment Setup
+	4. Install Node.js.
+	5. Install TypeScript: npm install -g typescript.
+
+- TypeScript Basic Syntax
+	Type annotations: let num: number = 10;.<br>
+	Functions: function add(x: number, y: number): number { return x + y; }.
+1. TypeScript Types
+	1. Primitive types: number, string, boolean.
+	2. Special types: any, void, null, undefined, never.
+	3. Complex types: arrays, tuples, enums.
+2. TypeScript Variables
+	1. Declare with 'let' and 'const'.
+	2. Type annotations: let age: number = 30;.
+3. TypeScript Operators
+	1. Arithmetic: +, -, *, /.
+	2. Comparison: ==, ===, !=, !==, >, <, >=, <=.
+	3. Logical: &&, ||, !.
+	4. Bitwise: &, |, ^, ~, <<, >>, >>>.
+4. TypeScript Decision Making			
+	1. if, else if, else.
+	2. switch statements.
+5. TypeScript Loops
+	1. for, while, do-while.
+
+6. TypeScript Functions
+	1. Function declaration:  
+	```
+	function add(a: number, b: number): number { return a + b; }.
+	```
+	2. Arrow functions: 
+	```
+	const add = (a: number, b: number): number => a + b;.
+	```
+7. TypeScript Numbers
+	1. All numbers are floating-point.
+	2. Hexadecimal, decimal, octal, and binary literals.
+8. TypeScript Strings
+	1. Template strings: 
+	```
+	let name: string = Hello, ${firstName} ${lastName};
+	```
+9. TypeScript Arrays
+	```
+	Typed arrays: let list: number[] = [1, 2, 3];.
+	Generic arrays: let list: Array<number> = [1, 2, 3];.
+	```
+10. TypeScript Tuples
+	```
+	Fixed length arrays with known types:
+	let tuple: [string, number] = ["hello", 10];.
+	```
+11. TypeScript Unions
+	```
+	Combine multiple types: 
+	let value: string | number;
+	```
+12. TypeScript Interfaces
+	Define a structure:
+
+	```
+	interface Person 
+	{
+		name: string;
+		age: number;
+	}
+	let person: Person = { name: "John", age: 25 };
+	```
+13. TypeScript Classes
+	Define classes with constructors and methods:
+
+	```
+	class Animal {
+	name: string;
+	constructor(name: string) {
+		this.name = name;
+	}
+	move(distance: number = 0) {
+		console.log(`${this.name} moved ${distance}m.`);
+	}
+	}
+	```
+14. TypeScript Objects
+	Objects with properties and methods:
+	typescript
+	```
+	let user = {
+	name: "John",
+	age: 30,
+	greet: function() { console.log("Hello!"); }
+	};
+	```
+15. TypeScript Namespaces
+	Group related code:
+	```
+	namespace Validation 
+	{
+		export interface StringValidator 
+		{
+			isAcceptable(s: string): boolean;
+		}
+	}
+	```
+16. TypeScript Modules
+		Export and import code:
+	```
+	export class MyClass { }
+	import { MyClass } from './my-module';
+	```
+
+1. TypeScript vs. JavaScript
+TypeScript provides static typing, interfaces, classes, and advanced tooling, making it more robust and maintainable for large-scale applications.
+2. JavaScript is more flexible and dynamic but can lead to runtime errors and maintenance challenges.
+
+## 5 Steps to Setup Enviourment 
 1. Node js 
 2. NPM 
 3. CLI
